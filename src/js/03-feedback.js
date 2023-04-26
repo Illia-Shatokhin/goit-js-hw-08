@@ -9,7 +9,7 @@ const initialInputValues = {
 
 if (load('feedback-form-state')) {
   const localStorageValue = load('feedback-form-state');
-  initialInputValuesChange(localStorageValue.email, localStorageValue.message);
+  setInitialInputValues(localStorageValue.email, localStorageValue.message);
   inputValuesFromInitialInputValues();
 }
 
@@ -28,7 +28,7 @@ feedbackForm.addEventListener('submit', event => {
     console.log(initialInputValues);
     remove('feedback-form-state');
   }
-  initialInputValuesChange('', '');
+  setInitialInputValues('', '');
   feedbackForm.reset();
 });
 
@@ -58,7 +58,7 @@ function remove(key) {
   }
 }
 
-function initialInputValuesChange(email, message) {
+function setInitialInputValues(email, message) {
   initialInputValues.email = email;
   initialInputValues.message = message;
 }
