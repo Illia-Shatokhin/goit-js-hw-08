@@ -15,7 +15,7 @@
   "author": "Illia Shatokhin <resonance.2106@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://https://github.com/Illia-Shatokhin/goit-js-hw-08/issues"
+    "url": "https://github.com/Illia-Shatokhin/goit-js-hw-08/issues"
   },
   "dependencies": {
     "@vimeo/player": "^2.19.0",
