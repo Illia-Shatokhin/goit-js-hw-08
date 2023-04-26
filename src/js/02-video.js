@@ -6,7 +6,7 @@ const player = new Player(iframe);
 
 player.on(
   'timeupdate',
-  _.throttle(data => console.log(data), 1000)
+  _.throttle(({ seconds }) => console.log(seconds), 1000)
 );
 
-player.setCurrentTime(130.456);
+player.setCurrentTime(133.1);
