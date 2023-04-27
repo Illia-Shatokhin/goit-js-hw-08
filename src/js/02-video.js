@@ -1,8 +1,8 @@
 import Player from '@vimeo/player';
 import _ from 'lodash';
 
-const iframe = document.querySelector('iframe');
-const player = new Player(iframe);
+const vimeoPlayer = document.querySelector('#vimeo-player');
+const player = new Player(vimeoPlayer);
 
 player.on(
   'timeupdate',

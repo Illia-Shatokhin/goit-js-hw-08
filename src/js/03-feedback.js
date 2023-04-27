@@ -24,10 +24,11 @@ feedbackForm.addEventListener(
 
 feedbackForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (load('feedback-form-state')) {
-    console.log(initialInputValues);
-    remove('feedback-form-state');
+  if (initialInputValues.email === '' || initialInputValues.message === '') {
+    return alert('Заповніть всі поля');
   }
+  console.log(initialInputValues);
+  remove('feedback-form-state');
   setInitialInputValues('', '');
   feedbackForm.reset();
 });
